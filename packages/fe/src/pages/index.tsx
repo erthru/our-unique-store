@@ -34,6 +34,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { useSidebarStore } from "@/store/sidebar";
+import { trpc } from "@/lib/trpc";
 
 const tempData = Array.from({ length: 24 }).map(() => ({
   id: "1",
@@ -59,13 +60,14 @@ const tempData = Array.from({ length: 24 }).map(() => ({
 
 const Index = () => {
   const { show } = useSidebarStore();
+  const { data: products } = trpc.product.getAll.useQuery();
 
   return (
     <>
       <div className="w-full flex flex-col gap-y-2 md:flex-row items-center h-[max-content]">
         <p>
           Showing 20,000+ Products from global suppliers for "Used Mobile
-          Phones"
+          Phones" {JSON.stringify(products)}
         </p>
         <div className="w-full md:w-auto md:ml-auto flex items-center mt-2 md:mt-0">
           <DropdownMenu>

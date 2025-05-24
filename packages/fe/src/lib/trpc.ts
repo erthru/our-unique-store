@@ -1,5 +1,4 @@
-import { createReactQueryHooks } from "@trpc/react";
+import { createTRPCReact } from "@trpc/react-query";
 import type { Router } from "be/src/trpc/router";
 
-export const trpc = createReactQueryHooks<Router>();
-trpc.useQuery([""]);
+export const trpc = createTRPCReact<Router>();
