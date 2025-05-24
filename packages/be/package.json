@@ -1,0 +1,21 @@
+{
+  "name": "be",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "@hono/trpc-server": "^0.3.4",
+    "@trpc/server": "^11.1.2",
+    "hono": "^4.7.10",
+    "prisma": "^6.8.2",
+    "ulid": "^3.0.0",
+    "zod": "^3.25.23"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "prisma": {
+    "schema": "src/model.prisma",
+    "migrateOutput": "src/migrations"
+  }
+}
