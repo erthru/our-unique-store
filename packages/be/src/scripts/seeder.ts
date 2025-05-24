@@ -27,7 +27,7 @@ const data = [
       "https://s.alicdn.com/@sc04/kf/H652965fac5994861be379dbcd2322bc4q.jpg_720x720q50.jpg",
       "https://s.alicdn.com/@sc04/kf/H92555dbba71c42ce9169b378080ae002z.jpg_720x720q50.jpg",
     ],
-    storeName: "Guangzhou Haomi Digital Technology Co., Ltd.",
+    storeName: "Shenzhen Shuyuan Intelligent Selection Technology Co., Ltd.",
   },
 ];
 
