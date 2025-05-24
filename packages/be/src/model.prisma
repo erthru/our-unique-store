@@ -1,3 +1,7 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
 datasource db {
     provider = "postgresql"
     url      = env("DATABASE_URL")
@@ -13,7 +17,7 @@ model Product {
     stockQuantity        Int?
     minimumOrderQuantity Int?
     storeName            String
-    storeReputation      String
+    storeReputation      Int
     createdAt            DateTime @default(now())
     updatedAt            DateTime @updatedAt
 }
