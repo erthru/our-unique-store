@@ -1,15 +1,7 @@
 # our-unique-store
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.2.12. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+1. Run ```bun install```
+2. Run ```bun be:db-genarate```
+3. Run ```bun be:db-migrate```
+4. Run ```bun be:db-seed```
+5. run ```bun dev```
