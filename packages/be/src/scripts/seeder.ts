@@ -90,6 +90,64 @@ const data = [
     ],
     storeName: "Shenzhen Zhongxing Communication Technology Co., Ltd.",
   },
+  {
+    name: "Mobile Phones Cell Phones Quality Unlocked Original 11 11Pro 11proMax Second Hand Phone",
+    price: 230,
+    imageUrls: [
+      "https://s.alicdn.com/@sc04/kf/Hfd3c5b82373a4141aa4ab4c6d9999df0Q.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/Hbb80bb122e974b29bf1683953385747f5.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/H42f466e2eeb6430782b5a9a463a95222Z.jpg_720x720q50.jpg",
+    ],
+    storeName: "Guangzhou Zidian Technology Limited",
+  },
+  {
+    name: "High Quality 100% Original Used Mobile Phone 8 Unlocked 4G Smart Phone for IPhone 8 64GB",
+    price: 59,
+    imageUrls: [
+      "https://s.alicdn.com/@sc04/kf/Hd5beb419cbc14479b51a37aa642d6be4n.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/Hd986923344e14536a03cf891d6e68416p.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/Ha13e5c4ee73244da8a71b8f6b2da7439P.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/Hab5a8017bf5b4026b471e76aab7e0592R.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/H9fa81129ade4439eb6766ada6fe236c5e.jpg_720x720q50.jpg",
+    ],
+    storeName: "Shenzhen Shuyuan Intelligent Selection Technology Co., Ltd.",
+  },
+  {
+    name: "High Quality Unlocked Original Used Mobile Phones 64GB Smart Phones for Sam Sung A50",
+    price: 30,
+    imageUrls: [
+      "https://s.alicdn.com/@sc04/kf/Hd467c553d7344121a31c83c4037dec2dv.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/H9448418b353849ec9f7278dc1c0de5ecM.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/Hcbf443e2ed6d465ea77e94e4a612dcb0z.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/H0a7ee10073bf40459e56b22163e5d516B.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/Hd159e22d0c2c495f861bb57b04be17aeY.png_720x720q50.jpg",
+    ],
+    storeName: "Shenzhen Chuangyijia Technology Co., Ltd.",
+  },
+  {
+    name: "Guarantee Original Used Phone for Google Pixel 7pro 8pro 9Pro XL Flagship 5G Long Standby Unclocked Grade A+ Genuine Telephone",
+    price: 200,
+    imageUrls: [
+      "https://s.alicdn.com/@sc04/kf/H108fa0b7b31a4b3db8c6eefb8e8af743h.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/Hba7fd16c6dac46b98b58b5012ce841f96.png_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/H34e15ee72291417aa46153f811c5aa43r.png_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/H298bc737c2074a4193974ab1fae567653.png_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/H4fbee3e767b241bba782c5b1c949f45b6.png_720x720q50.jpg",
+    ],
+    storeName: "Hangzhou Youyu Technology Co, Ltd.",
+  },
+  {
+    name: "14 Pro MAX 128 256 512GB Second Hand Original USA CHA Unlocked Stock Wholesale Mobile Phone Unlocked 11 12 Pro 13 14 Pro Max",
+    price: 470,
+    imageUrls: [
+      "https://s.alicdn.com/@sc04/kf/H412153947676433180e743254a258112l.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/Hd852b536b4d3446390cf9e500faf82c2u.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/Hd489ad4aabc049acbb8cf820d8d68d2bU.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/H6516539d5d85404a92e5b1deb0f81656S.jpg_720x720q50.jpg",
+      "https://s.alicdn.com/@sc04/kf/Hf458a4ac38b444a1940e8889b532b53ct.jpg_720x720q50.jpg",
+    ],
+    storeName: "Shenzhen Ruilan Technology Co., Ltd.",
+  },
 ];
 
 const main = async () => {
