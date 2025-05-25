@@ -13,6 +13,8 @@ const Router = createBrowserRouter([
         element: <Index />,
       },
       {
+        id: "productSlug",
+        handle: "/products/:slug",
         path: "/products/:slug",
         element: <BySlug />,
       },

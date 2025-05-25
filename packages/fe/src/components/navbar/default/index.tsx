@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const NavbarDefault = () => {
   return (
-    <nav className="bg-white w-full flex border-b border-gray-300 sticky top-0 z-10">
+    <nav className="bg-white w-full flex border-b border-gray-300 sticky top-0 z-60">
       <div className="container p-2 md:p-4 flex flex-col lg:flex-row items-center gap-x-10 gap-y-3">
         <div className="flex items-center gap-x-3 md:gap-x-10 w-full">
           <img

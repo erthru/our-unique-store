@@ -11,10 +11,10 @@ const router = t.router({
     return await prisma.product.findMany();
   }),
 
-  getById: t.procedure.input(z.string()).query(async ({ input }) => {
+  getBySlug: t.procedure.input(z.string()).query(async ({ input }) => {
     return await prisma.product.findUnique({
       where: {
-        id: input,
+        slug: input,
       },
     });
   }),
