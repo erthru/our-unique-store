@@ -1,7 +1,7 @@
 import NavbarDefault from "@/components/navbar/default";
 import SidebarDefault from "@/components/sidebar/default";
 import { useSidebarStore } from "@/store/sidebar";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Outlet, useMatches } from "react-router";
 
 const excludeTabFromRoutes = ["/products/:slug"];

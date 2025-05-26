@@ -31,9 +31,9 @@ const SidebarDefault = () => {
       <aside
         className={`${
           isShown
-            ? "min-w-[250px] max-w-[250px] lg:min-w-[200px] lg:max-w-[200px] p-3 fixed top-0 left-0 h-full z-50 lg:relative overflow-y-auto"
+            ? "min-w-[250px] max-w-[250px] lg:min-w-[200px] lg:max-w-[200px] p-3 fixed top-0 left-0 h-full z-60 md:z-50 lg:relative overflow-y-auto"
             : "min-w-0 max-w-0 p-0 overflow-hidden"
-        } bg-white h-[max-content] transition-all`}
+        } bg-white h-[max-content]`}
       >
         <p className="text-lg font-bold">Filters</p>
         <div className="flex items-center mt-3">
