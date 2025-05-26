@@ -1,7 +1,7 @@
 import NavbarDefault from "@/components/navbar/default";
 import SidebarDefault from "@/components/sidebar/default";
 import { useSidebarStore } from "@/store/sidebar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Outlet, useMatches } from "react-router";
 
 const excludeTabFromRoutes = ["/products/:slug"];
@@ -44,6 +44,7 @@ const LayoutDefault = () => {
   const matches = useMatches();
   const currentMatch = matches[matches.length - 1];
   const currentPattern = currentMatch.handle;
+
   return (
     <>
       <NavbarDefault />

@@ -35,10 +35,15 @@ import {
 } from "@/components/ui/pagination";
 import { useSidebarStore } from "@/store/sidebar";
 import { trpc } from "@/lib/trpc";
+import { useEffect } from "react";
 
 const Index = () => {
   const { show } = useSidebarStore();
   const { loading, data: products } = trpc.product.getAll.useQuery();
+
+  useEffect(() => {
+    show();
+  }, [show]);
 
   return (
     <>

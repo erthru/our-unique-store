@@ -1,12 +1,13 @@
 import { GlobeIcon, ShoppingCartIcon, UserIcon } from "lucide-react";
 import NavbarDefaultSearchBox from "./search-box";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router";
 
 const NavbarDefault = () => {
   return (
     <nav className="bg-white w-full flex border-b border-gray-300 sticky top-0 z-60">
       <div className="container p-2 md:p-4 flex flex-col lg:flex-row items-center gap-x-10 gap-y-3">
-        <div className="flex items-center gap-x-3 md:gap-x-10 w-full">
+        <Link to="/" className="flex items-center gap-x-3 md:gap-x-10 w-full">
           <img
             src="/images/logo.png"
             alt="logo"
@@ -18,7 +19,7 @@ const NavbarDefault = () => {
             className="h-8 md:hidden"
           />
           <NavbarDefaultSearchBox />
-        </div>
+        </Link>
         <div className="w-full flex items-center gap-x-5 md:gap-x-10">
           <div className="cursor-pointer">
             <p className="text-sm text-nowrap">Deliver to:</p>
