@@ -122,7 +122,10 @@ const BySlug = () => {
                         </p>
                         <p className="mt-1 text-sm">
                           Min. order: {product.minimumOrderQuantity} piece
-                          {product.minimumOrderQuantity > 1 ? "s" : ""}
+                          {product.minimumOrderQuantity &&
+                          product.minimumOrderQuantity > 1
+                            ? "s"
+                            : ""}
                         </p>
                       </Link>
                     </CarouselItem>

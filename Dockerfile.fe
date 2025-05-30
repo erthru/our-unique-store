@@ -1,0 +1,14 @@
+FROM oven/bun:1.1.0 as builder
+WORKDIR /app
+
+COPY bun.lockb package.json ./ 
+COPY packages/fe ./packages/fe
+RUN bun install
+RUN bun run fe:build
+
+FROM nginx:alpine
+COPY --from=builder /app/packages/fe/dist /usr/share/nginx/html
+COPY packages/fe/nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

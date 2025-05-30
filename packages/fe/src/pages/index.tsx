@@ -95,7 +95,7 @@ const Index = () => {
           />
         </div>
       </div>
-      {!isLoading && products?.length > 0 && (
+      {!isLoading && products && products?.length > 0 && (
         <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-3 gap-x-4 mt-5">
           {products.map((product) => (
             <Link
@@ -131,7 +131,11 @@ const Index = () => {
               </p>
               <p className="mt-1 text-sm">
                 Min. order: {product.minimumOrderQuantity} piece
-                {product.minimumOrderQuantity > 1 ? "s" : ""}
+                {product.minimumOrderQuantity &&
+                product.minimumOrderQuantity > 1
+                  ? "s"
+                  : ""}{" "}
+                &&
               </p>
               <p className="mt-1 text-sm cursor-pointer underline">
                 {product.storeName}
