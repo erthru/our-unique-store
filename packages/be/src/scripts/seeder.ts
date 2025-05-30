@@ -167,6 +167,7 @@ const main = async () => {
       price: 199,
       imageUrls: item.imageUrls,
       stockQuantity: 10,
+      minimumOrderQuantity: 4,
       storeName: item.storeName,
       storeReputation: Math.floor(Math.random() * 5) + 1,
     })),

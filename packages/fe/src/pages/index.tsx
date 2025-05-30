@@ -97,7 +97,7 @@ const Index = () => {
       </div>
       {!loading && products?.length > 0 && (
         <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-3 gap-x-4 mt-5">
-          {products.map((product: any) => (
+          {products.map((product) => (
             <Link
               key={product.id}
               to={`/products/${product.slug}`}
@@ -105,7 +105,7 @@ const Index = () => {
             >
               <Carousel>
                 <CarouselContent>
-                  {product.imageUrls.map((url: string) => (
+                  {product.imageUrls.map((url) => (
                     <CarouselItem>
                       <div className="relative rounded-xl overflow-hidden">
                         <div className="absolute top-3 right-3 bg-white/80 rounded-full h-10 w-10 hidden group-hover:flex items-center cursor-pointer">
