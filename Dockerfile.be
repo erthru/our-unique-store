@@ -5,8 +5,8 @@ COPY bun.lock package.json ./
 COPY packages ./packages
 
 RUN bun install
-RUN bun run be:db-generate
-RUN bun run be:db-migrate
+RUN bun run --cwd packages/be generate
+RUN bun run --cwd packages/be migrate
 
 FROM oven/bun:distroless
 WORKDIR /app

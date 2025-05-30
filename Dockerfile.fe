@@ -4,7 +4,7 @@ WORKDIR /app
 COPY bun.lock package.json ./ 
 COPY packages ./packages
 RUN bun install
-RUN bun run fe:build
+RUN bun run --cwd packages/fe build
 
 FROM nginx:alpine
 COPY --from=builder /app/packages/fe/dist /usr/share/nginx/html
