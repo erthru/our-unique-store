@@ -1,8 +1,8 @@
 FROM oven/bun:1.1.0 as builder
 WORKDIR /app
 
-COPY bun.lockb package.json ./ 
-COPY packages/fe ./packages/fe
+COPY bun.lock package.json ./ 
+COPY packages ./packages
 RUN bun install
 RUN bun run fe:build
 
