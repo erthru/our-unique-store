@@ -4,6 +4,7 @@
     "fe:dev": "bun run --filter 'fe' dev",
     "fe:build": "bun run --filter 'fe' build",
     "be:dev": "bun run --filter 'be' dev",
+    "be:start": "bun run --filter 'be' start",
     "be:db-seed": "bun run --filter 'be' seed",
     "be:db-generate": "bun run --filter 'be' generate",
     "be:db-migrate": "bun run --filter 'be' migrate",

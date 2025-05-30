@@ -2,6 +2,7 @@
   "name": "be",
   "scripts": {
     "dev": "bun run --hot src/index.ts",
+    "start": "bun src/index.ts",
     "seed": "bun run src/scripts/seeder.ts",
     "generate": "bun prisma generate",
     "migrate": "bun prisma migrate dev"
