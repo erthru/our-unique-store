@@ -3,7 +3,6 @@
     "strict": true,
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",
-    "rootDir": "./src"
   },
   "include": ["src"]
 }

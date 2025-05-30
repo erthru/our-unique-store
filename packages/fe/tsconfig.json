@@ -3,15 +3,12 @@
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" },
-    { "path": "../be" }
+    { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "be": ["../be/src"],
-      "be/*": ["../be/src/*"]
+      "@/*": ["./src/*"]
     }
   }
 }

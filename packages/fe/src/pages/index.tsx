@@ -39,7 +39,7 @@ import { useEffect } from "react";
 
 const Index = () => {
   const { show } = useSidebarStore();
-  const { loading, data: products } = trpc.product.getAll.useQuery();
+  const { isLoading, data: products } = trpc.product.getAll.useQuery();
 
   useEffect(() => {
     show();
@@ -95,7 +95,7 @@ const Index = () => {
           />
         </div>
       </div>
-      {!loading && products?.length > 0 && (
+      {!isLoading && products?.length > 0 && (
         <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-3 gap-x-4 mt-5">
           {products.map((product) => (
             <Link

@@ -1,8 +1,5 @@
 {
   "name": "our-unique-store",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
   "scripts": {
     "fe:dev": "bun run --filter 'fe' dev",
     "be:dev": "bun run --filter 'be' dev",

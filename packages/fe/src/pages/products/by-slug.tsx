@@ -21,8 +21,12 @@ import { Link, useParams } from "react-router";
 const BySlug = () => {
   const { slug } = useParams();
   const { hide } = useSidebarStore();
-  const { data: product, loading } = trpc.product.getBySlug.useQuery(slug);
-  const { data: otherProducts, loading: loadingOtherProducts } =
+
+  const { data: product, isLoading } = trpc.product.getBySlug.useQuery(
+    slug as string
+  );
+
+  const { data: otherProducts, isLoading: loadingOtherProducts } =
     trpc.product.getAll.useQuery();
 
   useEffect(() => {
@@ -46,7 +50,7 @@ const BySlug = () => {
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
-      {product && !loading && (
+      {product && !isLoading && (
         <div className="w-full flex flex-col md:flex-row gap-x-20 gap-y-3">
           <div className="min-w-[1px] flex-1">
             <p className="mt-3 font-bold text-xl">{product.name}</p>
