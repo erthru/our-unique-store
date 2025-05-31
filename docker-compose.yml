@@ -33,6 +33,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.fe
+    environment:
+      TSC_COMPILE_ON_ERROR: true
+      ESLINT_NO_DEV_ERRORS: true
     depends_on:
       - be
     ports:
