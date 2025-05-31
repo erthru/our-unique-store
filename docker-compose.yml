@@ -25,6 +25,9 @@ services:
       - "3000:3000"
     networks:
       - internal
+    command: >
+      sh -c "bun run --cwd packages/be migrate &&
+             bun packages/be/index.ts"
 
   fe:
     build:
