@@ -1,0 +1,45 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: our-unique-store
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - internal
+
+  be:
+    build:
+      context: .
+      dockerfile: Dockerfile.be
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://postgres:root@db:5432/our-unique-store
+    ports:
+      - "3000:3000"
+    networks:
+      - internal
+
+  fe:
+    build:
+      context: .
+      dockerfile: Dockerfile.fe
+    depends_on:
+      - be
+    ports:
+      - "80:80"
+    networks:
+      - internal
+
+volumes:
+  db_data:
+
+networks:
+  internal:
+    driver: bridge
