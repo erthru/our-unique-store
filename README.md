@@ -1,5 +1,4 @@
 # our-unique-store
-
 1. Run ```bun install```
 2. Run ```bun be:db-genarate```
 3. Run ```bun be:db-migrate```
@@ -13,3 +12,6 @@ There wasn’t any major challenge on the front-end side, but I did face some di
 
 ## Access online the development server
 https://our-unique-store.info
+
+## Docker compose
+```docker compose up -d --build```
