@@ -13,7 +13,7 @@ const App = () => {
     trpc.createClient({
       links: [
         httpBatchLink({
-          url: process.env.NODE_ENV === "production" ? "http://103.245.38.102:3000/trpc" : "http://localhost:3000/trpc",
+          url: process.env.NODE_ENV === "production" ? "https://api.our-unique-store.my.id/trpc" : "http://localhost:3000/trpc",
         }),
       ],
     })
